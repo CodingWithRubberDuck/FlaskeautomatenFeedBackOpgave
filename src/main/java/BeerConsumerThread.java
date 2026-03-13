@@ -1,9 +1,9 @@
 import Model.BeerBottle;
 
-public class BeerConsumer implements Runnable {
+public class BeerConsumerThread implements Runnable {
     private BeerBottleQueue beerQueue;
 
-    public BeerConsumer(BeerBottleQueue beerQueue){
+    public BeerConsumerThread(BeerBottleQueue beerQueue){
         this.beerQueue = beerQueue;
     }
 

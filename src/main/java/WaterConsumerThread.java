@@ -1,9 +1,9 @@
 import Model.WaterBottle;
 
-public class WaterConsumer implements Runnable{
+public class WaterConsumerThread implements Runnable{
     private WaterBottleQueue waterQueue;
 
-    public WaterConsumer(WaterBottleQueue waterQueue){
+    public WaterConsumerThread(WaterBottleQueue waterQueue){
         this.waterQueue = waterQueue;
     }
 

@@ -25,10 +25,10 @@ public class Main {
         splitterThread.start();
 
 
-        Thread beerConsumer = new Thread(new BeerConsumer(beerQueue));
+        Thread beerConsumer = new Thread(new BeerConsumerThread(beerQueue));
         beerConsumer.start();
 
-        Thread waterConsumer = new Thread(new WaterConsumer(waterQueue));
+        Thread waterConsumer = new Thread(new WaterConsumerThread(waterQueue));
         waterConsumer.start();
     }
 }
